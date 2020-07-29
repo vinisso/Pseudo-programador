@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function exibirNomes(){
+                var nomes = document.getElementById("txtNomes").value;
+                nomes = nomes.split(",");
+                
+               for(i=nomes.length-1;i>=0;i--){
+                document.write(nomes[i]+"<br>");
+            }
+        }
+        </script>
+    </head>
+    <body>
+
+        Nomes<input type="text" id="txtNomes">
+        <input type="button" value="Exibir" onclick="exibirNomes()">
+        
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function verificarIdades(){
+                var idades = document.getElementById("txtIdades").value;
+                idades = idades.split(",");
+                var maior = 0;
+                var menor = 0;
+                for(i=0;i<idades.length;i++){
+                    if(parseInt(idades[i]) >=18){
+                        maior++;
+                    }else{
+                        menor++;
+                    }
+                }
+                document.write("Maiores: "+maior+" - Menores: "+menor);
+            }
+        </script>
+    </head>
+    <body>
+
+        Idades<input type="text" id="txtIdades">
+        <input type="button" value="Calcular Quadrado" onclick="verificarIdades()">
+        
+    </body>
+</html>

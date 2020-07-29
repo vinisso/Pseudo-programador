@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function verificarDados(){
+                var altura = document.getElementById("txtAltura").value;
+                var sexo = document.getElementById("txtSexo").value;
+                
+                altura = altura.split(",");
+                sexo = sexo.split(",");
+                var masculino = 0;
+                var feminino = 0;
+                var maiorAltura = parseFloat(altura[0]);
+                var sexoMaiorAltura = sexo[0];
+                for(i=0;i<sexo.length;i++){
+                    if(sexo[i] == "m"){
+                        masculino++;
+                    }else if(sexo[i] == "f"){
+                        feminino++;
+                    }
+                    
+                    if(parseFloat(altura[i]) > maiorAltura){
+                        maiorAltura = parseFloat(altura[i]);
+                        sexoMaiorAltura = sexo[i];
+                    }
+                }
+                
+                document.write("Masculino: "+masculino+" - Feminino: "+feminino+"<br>");
+                document.write("A maior altura é "+maiorAltura+" e pertence ao sexo "+sexoMaiorAltura);
+            }
+        </script>
+    </head>
+    <body>
+Altura<input type="text" id="txtAltura">
+<br>
+Sexo<input type="text" id="txtSexo">
+        <input type="button" value="Verificar" onclick="verificarDados()">
+    </body>
+</html>

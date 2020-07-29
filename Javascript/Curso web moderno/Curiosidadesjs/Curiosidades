@@ -1,0 +1,24 @@
+Json significa - JavaScript Object Notation
+JavaScript não é seu nome oficial, e sim comercial. Seu real nome é ECMAscript
+(o "java" só foi usado para surfar em cima do hype do real java.)
+
+JS no node e no browser tem algumas diferenças a serem consideradas.
+Tem que tomar muito cuidado com as variáveis de escopo global.
+window % this
+
+funções e variaveis criadas com var podem ser acessadas pelo window e pelo this.
+Agora uma 'const f1 = () { return '123' }' por antes ter sido atribuida
+a uma contante (ou let). Não poderá funcionar com os escopos globais.
+
+Dentro de um contexto de objeto o 'this' irá apontar para o próprio objeto.
+Por exemplo:
+
+let pessoa = {nome: 'Ana', falar: function() { return `Olá, meu nome é ${this.nome}` }}
+// lembrar da crase(back tick(`))
+
+se você no browser tentar chamar: 'this.nome' dará erro. Pois o 'this' estava
+se referindo apenas àquele bloco. O this fora do contexto de bloco se refere ao global
+this === window.
+
+Dentro do node cada arquivo representa um módulo. Diferente do browser que estão
+todos competindo pelo escopo global
