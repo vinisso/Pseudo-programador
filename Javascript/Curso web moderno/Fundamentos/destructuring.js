@@ -1,6 +1,7 @@
 // novo recurso do ES 2015
 const pessoa = {
     nome: 'Ana',
+    sobrenome: 'julia',
     idade:  5,
     endereco: {
         logradouro: 'Rua do pringolé',
@@ -8,7 +9,7 @@ const pessoa = {
     }
 }
 // As chaves representam o operador de desestruturação (destructuring)
-const { nome, idade} = pessoa
+const { nome, idade } = pessoa
 console.log(nome + ', ' + idade)
 
 const {nome: n, idade: i } = pessoa
@@ -20,5 +21,5 @@ console.log(sobrenome, bemHumorada)
 const { endereco: {logradouro, numero, CEP }} = pessoa
 console.log(logradouro, numero, CEP)
 
-const { conta: { ag, num} } = pessoa
+const { conta: { ag, num } } = pessoa
 console.log(ag, num)
