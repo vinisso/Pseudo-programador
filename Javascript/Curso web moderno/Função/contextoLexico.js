@@ -1,12 +1,11 @@
 const valor = 'Global'
 
-function minhaFuncao () {
-    console.log(valor)
+function nao() {
+    const valor = 'Arroz'
+    function sim() {
+        return valor
+    }return sim
 }
 
-function exec() {
-    const valor = 'Local'
-    minhaFuncao()
-}
-
-exec()
+const hehe = nao()
+console.log(hehe())
