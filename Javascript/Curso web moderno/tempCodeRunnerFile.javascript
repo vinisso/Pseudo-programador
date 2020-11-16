@@ -1,26 +1,17 @@
-Array.prototype.map2 = function(callback) {
-    const newArray = []
+const polegadas = function(x){
+    a = (x / 2.54)
+    a = a.toFixed(2) +  " polegadas"
+    return a
+}
 
-    for (i = 0; i < this.length; i++) {
-        newArray.push(callback(this[i], i, this ))
-    }
-    return newArray
-} 
+console.log(polegadas(12))
 
-const carrinho = [
-    '{ "nome": "Borracha", "preco": 3.45 }',
-    '{ "nome": "caderno", "preco": 13.90 }',
-    '{ "nome": "Kit de lápis", "preco": 41.22 }',
-    '{ "nome": "Caneta", "preco": 7.50 }',
-    '{ "nome": "Boneca inflável", "preco": 279.80} '
-]
+//
 
-//retornar apenas com os preços
-const paraObjeto = json => JSON.parse(json)
-const apenasPreco = produto => 'R$ ' + produto.preco
+console.log("Metros para centímetros...")
 
-const resultado = carrinho.map2(paraObjeto).map2(apenasPreco)
-console.log(resultado)
+const centi = metros => {
+    metros * 100
+}
 
-
-
+console.log(centi(20))
