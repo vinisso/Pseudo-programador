@@ -1,2 +1,1 @@
-
-        }
+const conc = fun => {

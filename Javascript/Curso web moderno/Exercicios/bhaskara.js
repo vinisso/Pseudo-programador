@@ -1,12 +1,18 @@
-const media = function (nota, nota2) {
-    let ponto = (nota + nota2) / 2
-    if (ponto < 5) {
-        console.log(`Reprovado com nota - ${ponto}`)
-    }else if (ponto >= 5) {
-        console.log(`Aprovado com média - ${ponto}`)
-    }else {
-        return 'Nota inválida'
+var delta = (a, b, c) => {
+    delta = b ** 2 - (4 * a * c)
+    console.log('Seu delta é:', delta)
+    if (delta < 0){
+        console.log('NÃO TEM RAIZES REAIS!')
+    }
+    else if (delta == 0) {
+        let x1 = -b + Math.sqrt(delta) / (2 * a)
+        console.log('Sua raiz é: ', x1)  
+    }
+    else if (delta > 0) {
+        x1 = -b + Math.sqrt(delta) / (2 * a)
+        let x2 = -b - Math.sqrt(delta) / (2 * a)
+        console.log('Suas raizes são:', x1.toFixed(2) + ',', x2.toFixed(2))
     }
 }
 
-console.log(media(4, 5))
+delta(3, 8, 5)
