@@ -5,9 +5,9 @@ function isString(value) {
 const conc = fun => {
     console.log('Olá, '.concat(fun, '!'))
     letra = fun.split('')
-    console.log('Seu nome tem ' + letra + ' letras')
+    console.log('Seu nome tem ' + letra.length + ' letras')
     
-    if (fun.isString && fun > 7) {
+    if (fun.isString && letra.length > 7) {
         return 'Nome longo do cacete'
     } 
 }
