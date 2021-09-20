@@ -12,4 +12,4 @@ const conc = fun => {
     } 
 }
 
-conc('Jujubeola')
+console.log(conc('Jujubeola'))
