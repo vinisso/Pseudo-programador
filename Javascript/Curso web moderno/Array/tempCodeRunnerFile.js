@@ -1,1 +1,0 @@
-alunos[i].nota
