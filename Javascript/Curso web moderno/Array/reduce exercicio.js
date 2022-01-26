@@ -11,7 +11,7 @@ const inner = animais.reduce((total, elemento) => {
     else return total
 }, 0)  
 
-//console.log(inner)
+console.log(inner)
 
 const nome = animais.map(a => a.nome)
 console.log(nome)
