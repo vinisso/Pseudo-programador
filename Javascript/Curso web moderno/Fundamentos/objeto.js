@@ -1,4 +1,4 @@
-const prod1 = {} // o par de colchetes '{}' simboliza um objeto. Se fossem parentêses '()', seria um array
+const prod1 = {} // o par de colchetes '{}' simboliza um objeto. Se fossem colchetes '[]', seria um array
 
 // Objeto é uma coleção/grupos de pares, chavese valor.
 

@@ -4,19 +4,9 @@
 const moduloA = require('./moduloA')
 const moduloB = require('./moduloB')
 
-console.log(moduloA.ola)
-console.log(moduloA.boasVindas)
-console.log(moduloA.tchau)
-console.log(moduloA)
-
-// Modulo B
-
-
-const moduloA = require('./moduloA')
-const moduloB = require('./moduloB')
 
 console.log('Modulo A \n')
-console.log(moduloA.ola)
+console.log(moduloA.opa)
 console.log(moduloA.bemVindo)
 console.log(moduloA.ateLogo)
 
@@ -24,6 +14,8 @@ console.log(moduloA.ateLogo)
 console.log('\n')
 console.log(moduloA)
 console.log('\n\n')
+
+// Modulo B
 
 console.log('Modulo B \n')
 

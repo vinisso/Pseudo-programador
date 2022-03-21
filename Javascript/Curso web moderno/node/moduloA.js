@@ -1,13 +1,13 @@
 
 this.ola = 'Salve, grande'
 
-exports.boasVindas = 'Bora de pragramations'
+exports.boasVindas = 'Bora de programations'
 
 module.exports.tchau = 'até mais'
  
 const moduloB = require("./moduloB")
 
-this.ola = 'Oi'
+this.opa = 'Oi'
 exports.bemVindo = 'Bem vindo'
 module.exports.ateLogo = 'Tchau'
 

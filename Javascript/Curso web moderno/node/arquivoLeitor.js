@@ -28,3 +28,5 @@ fs.readdir(__dirname, (err, arquivos) => {
     console.log('Conteudo da pasta...')
     console.log(arquivos)
 })
+
+// __dirname é uma constante presente em todos os arquivos do node, em todos os módulos do node. Ele representa o diretório atual. Assim como o './'
