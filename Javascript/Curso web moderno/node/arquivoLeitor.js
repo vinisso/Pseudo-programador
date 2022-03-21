@@ -1,31 +1,26 @@
+
 const fs = require('fs')
 
-const caminho = __dirname + '/arquivo.JSON'
+const caminho = __dirname + '/arquivo.json'
 
-// Sincrono... Só vai executar a próxima tarefa após terminar a anterior, estratégia ruim quando se mexe com arquivos pesados
-//Tomar cuidado...
+//Sincrono... Tome cuidado com a estratégia usada para manipulação de dados pelo fs, mal utilizado fará muita demora no processamento desses dados. Estudar métodos sincronos e assíncronos
 
 const conteudo = fs.readFileSync(caminho, 'utf-8')
+
 console.log(conteudo)
 
-// Assíncrono
+//Assincrono
 
 fs.readFile(caminho, 'utf-8', (err, conteudo) => {
     const config = JSON.parse(conteudo)
-    console.log(`${config.db.host}:${config.db.port}`)
+    console.log(`${config.db.host}:${config.db.port}}`) 
 })
 
-// Para facilmente ler um arquivo .JSON, é muito simples. Basta fazer isso:
-const config = require('./arquivo.json')
-
+const config = require('./arquivo.json') //Sempre especificar a extensão do arquivo quando for diferente de JavaScript, pois senão especificado, o node procurará somente arquivos .js, retornando um erro
 console.log(config.db)
 
-//Note que esse ultimo console.log será lido antes do código acima dele, pois entra naquele caso dos assíncronos e síncronos.
-
-//Leitura de pastas:
-
 fs.readdir(__dirname, (err, arquivos) => {
-    console.log('Conteudo da pasta...')
+    console.log('Conteúdo da pasta...')
     console.log(arquivos)
 })
 

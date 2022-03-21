@@ -1,0 +1,9 @@
+// O script "Start" pode ser executado pelo temrinal usando o comando "npm start". Já o resto, preciso usar o "run" depois de "npm" por "start" já ser um nome padrão de leitura no NPM.
+
+/*
+
+npm start
+-
+npm run dev
+
+*/
