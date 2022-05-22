@@ -2,7 +2,7 @@
   "name": "projeto",
   "version": "1.0.0",
   "description": "",
-  "main": "src/servidor.js",
+  "main": "source/servidor.js",
   "scripts": {
     "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
