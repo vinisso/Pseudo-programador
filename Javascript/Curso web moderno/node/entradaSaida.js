@@ -12,7 +12,7 @@ if (anonimo) {
     process.stdin.on('data', data => {
         const nome = data.toString().replace(`${os.EOL}`, "")
 
-    process.stdout.write(`Fala, ${nome}!!${os.EOL}`)
+    process.stdout.write(`Fala, ${nome}!${os.EOL}`)
     process.exit()
     })
 }
