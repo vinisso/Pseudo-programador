@@ -4,7 +4,7 @@ console.log(soma(5, 12)) // -> Funcões Arrows são anonônimas, isso significa 
  
 // Arrow function (this)
 const lexico1 = () => console.log(this === exports)
-const lexico2 = lexico1.bind({}) // o Bind muda o escopo da funcão. Nesse caso, tentamos o mudar para um objeto vazio. Porém, a função arrow não permite isso.
+const lexico2 = lexico1.bind({}) // o Bind muda o escopo da funcão. Nesse caso, tentamos o mudar para um objeto vazio, Porém, a função arrow não permite isso.
 
 lexico1()
 lexico2()
