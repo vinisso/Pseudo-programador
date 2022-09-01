@@ -22,7 +22,7 @@ log(null)
 // Operador rest
 function total(...numeros) {  // Quando em uma função, o 'rest' significa "Agrupar". Em Array ou objetos, seria o spread.
     let total = 0
-    numeros.forEach(n => total += n)
+    numeros.forEach(n => total += n) // "=+" - atribuição aditiva.
     return total
 }
 console.log(total(2, 3, 4, 5))
