@@ -1,4 +1,4 @@
-const produto = function(partes, ...valores) {
+function real(partes, ...valores) {
     const resultado = []
     valores.forEach((valor, indice) => {
         valor = isNaN(valor) ? valor : `R$${valor.toFixed(2)}`
@@ -7,7 +7,6 @@ const produto = function(partes, ...valores) {
     return resultado.join('')
 }
 
-const preco = 28.99
-const parcelado = 11
-
-console.log(produto `1x de ${preco} ou 3x de ${parcelado}.`)
+const preco = 29.99
+const precoParcela = 11
+console.log(real `1x de ${preco}, ou 3x de ${precoParcela}.`)
