@@ -2,7 +2,7 @@
 
 // arquivo focado em mostrar como era feito o método antigo, antes do promisse ser criado, e como ele veio para melhorar.
 
-const { Console } = require('console');
+const console = require('console');
 const http = require('http');
 
 const getTurma = letra => {
@@ -41,5 +41,5 @@ getTurma('A').then(alunos => {
 // Essas situações de encadeamento de callbacks, são chamadas de callback hell. É uma confusão de chamada de callbacks, uma dentro da outra, não usual. Para isso que foi criado o promises.
 
 Promise.all([getTurma('A'), getTurma('B'), getTurma('C')]) // Pode receber diversas promisses. Quando todas as promissse forem atendidas ou rejeitadas, dai então serão chamados os métodos .then()
-    .then(turmas => [].concat(...turmas))
+    .then(turmas => [].concat(...turmas)) // Aqui teremos apenas um Array que interna nele os outros arrays
     .then(x => console.log(x))

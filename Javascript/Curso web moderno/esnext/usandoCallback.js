@@ -32,3 +32,5 @@ getTurma('A', alunos => {
         })
     })
 })
+
+// Essas situações de encadeamento de callbacks, são chamadas de callback hell. É uma confusão de chamada de callbacks, uma dentro da outra, não usual. Para isso que foi criado o promises.
