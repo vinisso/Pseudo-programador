@@ -11,7 +11,7 @@ let vogais = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
 
 console.log("\n\n RESOLUÇÃO 1 \n\n")
 console.log(vogais('queria tomar uma coquinha.'))
-console.log("\n\n Esse método é meio zoado, pois ele só substitui a vogal uma única vez, como pode ver o que aconteceu com o caractere 'a'")
+console.log("\n\n Esse método é meio zoado, pois ele só substitui a vogal uma única vez.")
 
 
 // RESOLULÇAO 2
